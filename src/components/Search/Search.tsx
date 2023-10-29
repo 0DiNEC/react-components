@@ -9,6 +9,7 @@ const Search = () => {
       <button type="submit">
         
         
+        
         search</button>
     </div>
   );
