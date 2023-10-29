@@ -1,10 +1,14 @@
 import React from 'react';
+import { FC } from 'react';
+import style from './Search.module.css';
 
-const Search = () => {
+const Search: FC = () => {
   return (
-    <div>
-      <input type="text" className="search-bar" placeholder="write text" />
-      <button type="submit">search</button>
+    <div className={style.fSearch}>
+      <input type="text" className={style.input} placeholder="write text" />
+      <button type="submit" className={style.button}>
+        search
+      </button>
     </div>
   );
 };
