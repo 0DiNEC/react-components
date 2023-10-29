@@ -8,8 +8,7 @@ const Search = () => {
       placeholder="write text" />
       <button type="submit">
         
-        
-        
+
         
         search</button>
     </div>
