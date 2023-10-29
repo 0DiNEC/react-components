@@ -10,6 +10,7 @@ const Search = () => {
         
         
         
+        
         search</button>
     </div>
   );
