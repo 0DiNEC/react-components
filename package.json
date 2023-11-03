@@ -6,9 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "lint": "eslint --ext .ts,.tsx .",
-    "format": "prettier --write \"src/**/*.{ts, tsx, css}\"",
-    "format:fix": "npm run lint -- --fix",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "format:fix": "prettier --write .",
     "prepare": "husky install"
   },
   "dependencies": {
