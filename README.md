@@ -1,3 +1,3 @@
 # RSS Application
 
-## Rick and Morty
+## Star Wars
