@@ -20,7 +20,11 @@ function App() {
     fetchData();
   }, []);
 
-  return <div>{isLoading ? <Loader /> : <DataList data={data} />}</div>;
+  return (
+    <div className="App">
+      {isLoading ? <Loader /> : <DataList data={data} />}
+    </div>
+  );
 }
 
 export default App;

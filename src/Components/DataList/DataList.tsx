@@ -1,6 +1,7 @@
 import type { FC } from 'react';
 import { IData } from '../../Types/apiTypes';
 import DataItem from '../DataItem/DataItem';
+import style from './DataList.module.css';
 
 interface DataListProps {
   data: IData | null;
@@ -8,14 +9,10 @@ interface DataListProps {
 
 const DataList: FC<DataListProps> = ({ data }) => {
   return (
-    <div>
+    <div className={style.dataContainer}>
       {data &&
         data.results.map((item) => {
-          return (
-            <div key={item.name}>
-              <DataItem data={item} />
-            </div>
-          );
+          return <DataItem key={item.name} data={item} />;
         })}
     </div>
   );
