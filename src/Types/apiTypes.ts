@@ -23,3 +23,5 @@ export interface IData {
   previous: string | null;
   results: IPeople[];
 }
+
+export type IResult = IPeople;
