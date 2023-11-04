@@ -1,0 +1,60 @@
+.loader-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.loader_wrapper {
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(0 0 1px blue);
+}
+
+.text {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 4rem;
+  font-family: arial;
+  color: white;
+  text-shadow: 1px 1px 1px blue;
+  animation: blink 2s ease infinite;
+}
+
+.loader {
+  width: 200px;
+  height: 200px;
+  animation: flip 8s linear infinite;
+}
+
+.loader path {
+  stroke: white;
+  stroke-width: 30;
+  fill: transparent;
+  
+  stroke-dasharray: 100px 5px;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateZ(0deg);
+  }
+  100% {
+    transform: rotateZ(1080deg);
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: .5;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: .5;
+  }
+}

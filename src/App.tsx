@@ -1,5 +1,11 @@
+import Loader from './Components/Loader/Loader';
+
 function App() {
-  return <div>APP</div>;
+  return (
+    <div>
+      <Loader />
+    </div>
+  );
 }
 
 export default App;
